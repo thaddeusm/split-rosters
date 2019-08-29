@@ -68,10 +68,10 @@ function reformatStudents(worksheet) {
 
 		let formattedName
 
-		if (englishNames[i] !== '') {
+		if (englishNames[i]) {
 			formattedName = `${familyNames[i]}, ${firstNames[i]} (${englishNames[i]})`
 		} else {
-			`${familyNames[i]}, ${firstNames[i]}`
+			formattedName = `${familyNames[i]}, ${firstNames[i]}`
 		}
 
 		students.push({
