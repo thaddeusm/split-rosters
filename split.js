@@ -68,7 +68,7 @@ function reformatStudents(worksheet) {
 
 		let formattedName
 
-		if (englishNames[i] !== undefined) {
+		if (englishNames[i] !== '') {
 			formattedName = `${familyNames[i]}, ${firstNames[i]} (${englishNames[i]})`
 		} else {
 			`${familyNames[i]}, ${firstNames[i]}`
